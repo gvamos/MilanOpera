@@ -62,6 +62,22 @@ object Huff {
  val bits: List[Bit] = List(0,0,0)                //> bits  : List[patmat.Huffman.Bit] = List(0, 0, 0)
  
  
- val dc1 = decode1(bits, frenchCode, Nil)         //> dc1  : (List[patmat.Huffman.Bit], List[Char]) = (List(),List())
+ val dc1 = decode(frenchCode,secret)              //> dc1  : List[Char] = List(h, u, f, f, m, a, n, e, s, t, c, o, o, l)
+ 
+ val cdtbl = convert(frenchCode)                  //> cdtbl  : patmat.Huffman.CodeTable = List((e,List(0, 1, 1)), (s,List(0, 0, 0
+                                                  //| )), (a,List(1, 1, 1, 1)), (i,List(0, 1, 1, 1)), (t,List(1, 1, 0, 1)), (n,Li
+                                                  //| st(0, 1, 0, 1)), (r,List(0, 0, 0, 1)), (u,List(1, 1, 1, 0)), (l,List(1, 0, 
+                                                  //| 1, 0)), (o,List(0, 0, 1, 0)), (d,List(0, 1, 0, 0)), (c,List(0, 1, 0, 0, 1))
+                                                  //| , (p,List(1, 0, 1, 1, 0)), (m,List(0, 0, 1, 1, 0)), (v,List(0, 1, 1, 0, 0, 
+                                                  //| 1)), (q,List(1, 1, 1, 1, 0, 0)), (f,List(1, 0, 1, 1, 0, 0)), (b,List(1, 1, 
+                                                  //| 1, 1, 0, 0, 1)), (g,List(0, 1, 1, 1, 0, 0, 1)), (h,List(1, 0, 1, 1, 1, 0, 0
+                                                  //| )), (j,List(1, 0, 0, 1, 1, 0, 0)), (x,List(0, 0, 0, 1, 1, 0, 0)), (y,List(1
+                                                  //| , 0, 0, 1, 1, 1, 0, 0)), (z,List(0, 0, 0, 0, 1, 1, 1, 0, 0)), (w,List(1, 1,
+                                                  //|  0, 0, 0, 1, 1, 1, 0, 0)), (k,List(0, 1, 0, 0, 0, 1, 1, 1, 0, 0)))
+ 
+ val result =  decodedSecret                      //> result  : List[Char] = List(h, u, f, f, m, a, n, e, s, t, c, o, o, l)
+ 
+ def frenchEncoder(text: List[Char]) = quickEncode(frenchCode)(text)
+                                                  //> frenchEncoder: (text: List[Char])List[patmat.Huffman.Bit]
   
 }

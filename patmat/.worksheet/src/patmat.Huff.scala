@@ -49,9 +49,15 @@ object Huff {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; 
  val chars = string2Chars("hello, world");System.out.println("""chars  : List[Char] = """ + $show(chars ));$skip(29); 
  val analysis = times(chars);System.out.println("""analysis  : List[(Char, Int)] = """ + $show(analysis ));$skip(35); val res$1 = 
  makeOrderedLeafList(times(chars));System.out.println("""res1: List[patmat.Huffman.Leaf] = """ + $show(res$1));$skip(35); 
- val bits: List[Bit] = List(0,0,0);System.out.println("""bits  : List[patmat.Huffman.Bit] = """ + $show(bits ));$skip(46); 
+ val bits: List[Bit] = List(0,0,0);System.out.println("""bits  : List[patmat.Huffman.Bit] = """ + $show(bits ));$skip(41); 
  
  
- val dc1 = decode1(bits, frenchCode, Nil);System.out.println("""dc1  : (List[patmat.Huffman.Bit], List[Char]) = """ + $show(dc1 ))}
+ val dc1 = decode(frenchCode,secret);System.out.println("""dc1  : List[Char] = """ + $show(dc1 ));$skip(35); 
+ 
+ val cdtbl = convert(frenchCode);System.out.println("""cdtbl  : patmat.Huffman.CodeTable = """ + $show(cdtbl ));$skip(31); 
+ 
+ val result =  decodedSecret;System.out.println("""result  : List[Char] = """ + $show(result ));$skip(71); 
+ 
+ def frenchEncoder(text: List[Char]) = quickEncode(frenchCode)(text);System.out.println("""frenchEncoder: (text: List[Char])List[patmat.Huffman.Bit]""")}
   
 }
