@@ -48,8 +48,10 @@ object Huff {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; 
   
  val chars = string2Chars("hello, world");System.out.println("""chars  : List[Char] = """ + $show(chars ));$skip(29); 
  val analysis = times(chars);System.out.println("""analysis  : List[(Char, Int)] = """ + $show(analysis ));$skip(35); val res$1 = 
- makeOrderedLeafList(times(chars));System.out.println("""res1: List[patmat.Huffman.Leaf] = """ + $show(res$1));$skip(43); 
-  
- val clr = dive(frenchCode,List(0,0,0));System.out.println("""clr  : patmat.Huffman.CodeTree = """ + $show(clr ))}
+ makeOrderedLeafList(times(chars));System.out.println("""res1: List[patmat.Huffman.Leaf] = """ + $show(res$1));$skip(35); 
+ val bits: List[Bit] = List(0,0,0);System.out.println("""bits  : List[patmat.Huffman.Bit] = """ + $show(bits ));$skip(46); 
+ 
+ 
+ val dc1 = decode1(bits, frenchCode, Nil);System.out.println("""dc1  : (List[patmat.Huffman.Bit], List[Char]) = """ + $show(dc1 ))}
   
 }

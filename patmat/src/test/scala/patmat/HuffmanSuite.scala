@@ -89,10 +89,60 @@ class HuffmanSuite extends FunSuite {
   }
    
 
-  test("Minimal decode test") {
+  test("Minimal decode test: Find letter 's' in french table") {
     new TestTrees {
-      val clearText = decode(frenchCode,List(0,0,0))
-      assert(clearText === List('s'))
+      val bits: List[Bit] = List(0,0,0)                
+      val (remainder,cleartext) = decode_character( frenchCode, bits, Nil)
+      println("cleartext="+cleartext)
+      assert(remainder.length === 0)
+      assert('s' === cleartext(0))
+    }
+  }
+  
+  test("Minimal decode test 1 bit remains: Find letter 's' in french table") {
+    new TestTrees {
+      val bits: List[Bit] = List(0,0,0,0)                
+      val (remainder,cleartext) = decode_character( frenchCode, bits, Nil)
+      println("cleartext="+cleartext)
+      assert('s' === cleartext(0))
+      assert(remainder.length === 1) // Make sure a bit is left
+    }
+  }
+  
+    test("three chunks of french text") {
+    new TestTrees {
+      println("****")
+      val bits: List[Bit] = secret              
+      val (remainder0,cleartext0) = decode_character( frenchCode, bits, Nil)
+      println("cleartext0="+cleartext0)
+      println("remainder0="+remainder0)
+      val (remainder1,cleartext1) = decode_character( frenchCode,remainder0,  cleartext0)
+      println("cleartext1="+cleartext1)
+      println("remainder1="+remainder1)
+      val (remainder2,cleartext2) = decode_character( frenchCode, remainder1, cleartext1)
+      println("cleartext2="+cleartext2)
+      println("remainder2="+remainder2)
+
+      assert(cleartext2 == List('f','u','h'))
+    }
+  }
+    
+  test("Abbreviated French clear text message") {
+    new TestTrees {
+      println("****")
+      val bits: List[Bit] = (List(0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1))//secret 
+      val result = decode(frenchCode, bits)
+      assert(result === List('f','u','h'))
+    }
+  }
+  
+    test("French clear text message") {
+    new TestTrees {
+      println("****")
+      val bits: List[Bit] = secret 
+      val result = decode(frenchCode, bits)
+      println(result)
+      assert(result === List('f','u','h'))
     }
   }
    

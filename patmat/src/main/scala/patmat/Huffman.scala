@@ -90,7 +90,7 @@ object Huffman {
         case Nil => listOfAccums
         case c :: tail => times1(tail, tally(c, listOfAccums))
       }
-    }    
+    }
     times1(chars, List())
   }
 
@@ -101,44 +101,26 @@ object Huffman {
    * head of the list should have the smallest weight), where the weight
    * of a leaf is the frequency of the character.
    */
-  //def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = ???
-  
-//    implicit def tupleToLeaf(t: (Char, Int)): Leaf = t match { case (c, n) => Leaf(c, n) }
-//    implicit def leafToTuple(l: Leaf): Leaf = l match { case Leaf(c, n) => (c, n) }
-//    implicit def leafToCodeTree(l: Leaf): CodeTree = l
-//    implicit def forkToCodeTree(f: Fork): CodeTree = f
-//
-//    def insert(l: Leaf, freqs: List[Leaf]): List[Leaf] = {
-//      l match {
-//        case Leaf(c, n) =>
-//          freqs match {
-//            case Nil => List(l)
-//            case Leaf(c0, m) :: tail if (c == c0) => (c, n + m) :: tail
-//            case head :: tail if (weight(l) <= weight(head)) => l :: head :: tail
-//            case head :: tail => head :: insert(l, tail)
-//          }
-//      }
-//    }
 
-    // Insert leaf to list of leaves
-    def insert(l: Leaf, freqs: List[Leaf]): List[Leaf] = {
+  // Insert leaf to list of leaves
+  def insert(l: Leaf, freqs: List[Leaf]): List[Leaf] = {
 
-          freqs match {
-            case Nil => List(l)
-            case head :: tail if (weight(l) <= weight(head)) => l :: head :: tail
-            case head :: tail => head :: insert(l, tail)
-          }
+    freqs match {
+      case Nil => List(l)
+      case head :: tail if (weight(l) <= weight(head)) => l :: head :: tail
+      case head :: tail => head :: insert(l, tail)
     }
-   
-    // Insert tree to list of trees
-   def insert(l: CodeTree, freqs: List[CodeTree]): List[CodeTree] = {
+  }
 
-          freqs match {
-            case Nil => List(l)
-            case head :: tail if (weight(l) <= weight(head)) => l :: head :: tail
-            case head :: tail => head :: insert(l, tail)
-          }
+  // Insert tree to list of trees
+  def insert(l: CodeTree, freqs: List[CodeTree]): List[CodeTree] = {
+
+    freqs match {
+      case Nil => List(l)
+      case head :: tail if (weight(l) <= weight(head)) => l :: head :: tail
+      case head :: tail => head :: insert(l, tail)
     }
+  }
 
   def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = {
 
@@ -153,7 +135,7 @@ object Huffman {
    * Checks whether the list `trees` contains only one single code tree.
    */
   def singleton(trees: List[CodeTree]): Boolean = trees match {
-    case tree::Nil => true
+    case tree :: Nil => true
     case _ => false
   }
 
@@ -170,20 +152,20 @@ object Huffman {
    * unchanged.
    */
   //def combine(trees: List[CodeTree]): List[CodeTree] = ???
-    def combine(trees: List[CodeTree]): List[CodeTree] = {
+  def combine(trees: List[CodeTree]): List[CodeTree] = {
 
     //println("combine" + trees)
     trees match {
 
       case tree0 :: tree1 :: rest if (weight(tree0) < weight(tree1)) => {
         //println("left")
-          val fork = Fork(tree0, tree1, chars(tree0) ++ chars(tree1), weight(tree0) + weight(tree1))
-          insert(fork,rest)
+        val fork = Fork(tree0, tree1, chars(tree0) ++ chars(tree1), weight(tree0) + weight(tree1))
+        insert(fork, rest)
       }
       case tree0 :: tree1 :: rest => {
         //println("right")
         val fork = Fork(tree1, tree0, chars(tree1) ++ chars(tree0), weight(tree0) + weight(tree1))
-        insert(fork,rest)
+        insert(fork, rest)
       }
       case tree :: Nil => {
         //println("1")
@@ -196,8 +178,6 @@ object Huffman {
       }
     }
   }
-  
-
 
   /**
    * This function will be called in the following way:
@@ -217,27 +197,25 @@ object Huffman {
    *  - try to find sensible parameter names for `xxx`, `yyy` and `zzz`.
    */
   //def until(xxx: ???, yyy: ???)(zzz: ???): ??? = ???
-    
-    // def until(singleton: List[CodeTree]=>Boolean, combine: List[CodeTree]=>List[CodeTree]): ( List[CodeTree] => List[CodeTree] )
-    // val fold = until(singleton,combine)
-    // val result = fold(trees)
-    
-    //singleton(trees: List[CodeTree]): Boolean
-    //def combine(trees: List[CodeTree]): List[CodeTree] 
-    
-    def until(
-        pred: List[CodeTree]=>Boolean, 
-        combiner: List[CodeTree] => List[CodeTree])
-    (trees: List[CodeTree]): List[CodeTree] = {
-      
-      def fold(trees: List[CodeTree]):List[CodeTree] = {
-        if (pred(trees)) trees else {
-          fold(combine(trees))
-        }        
-      }           
-      fold(trees)
+
+  // def until(singleton: List[CodeTree]=>Boolean, combine: List[CodeTree]=>List[CodeTree]): ( List[CodeTree] => List[CodeTree] )
+  // val fold = until(singleton,combine)
+  // val result = fold(trees)
+
+  //singleton(trees: List[CodeTree]): Boolean
+  //def combine(trees: List[CodeTree]): List[CodeTree] 
+
+  def until(
+    pred: List[CodeTree] => Boolean,
+    combiner: List[CodeTree] => List[CodeTree])(trees: List[CodeTree]): List[CodeTree] = {
+
+    def fold(trees: List[CodeTree]): List[CodeTree] = {
+      if (pred(trees)) trees else {
+        fold(combine(trees))
+      }
     }
-    
+    fold(trees)
+  }
 
   /**
    * This function creates a code tree which is optimal to encode the text `chars`.
@@ -248,11 +226,24 @@ object Huffman {
   //def createCodeTree(chars: List[Char]): CodeTree = ???
   def createCodeTree(chars: List[Char]): CodeTree = {
     val spectrum = makeOrderedLeafList(times(chars))
-    val combined = until(singleton,combine)(spectrum)
+    val combined = until(singleton, combine)(spectrum)
     combined.head
   }
 
   // Part 3: Decoding
+
+  def isLeaf(tree: CodeTree): Boolean = {
+    tree match {
+      case Leaf(_, _) => true
+      case _ => false
+    }
+  }
+
+  def child(bit: Bit, tree: CodeTree): CodeTree = {
+    tree match {
+      case Fork(left, right, _, _) => if (bit == 0) left else right
+    }
+  }
 
   type Bit = Int
 
@@ -262,28 +253,58 @@ object Huffman {
    */
   //def decode(tree: CodeTree, bits: List[Bit]): List[Char] = ???
   
-  def decode(tree: CodeTree, bits: List[Bit]): List[Char] = {
+  def decode(tree: CodeTree, bits: List[Bit]): List[Char] = { 
     
-    def decode1(bits: List[Bit], clear: List[Char] ): (List[Bit], List[Char]) = { bits match {
-      
-      case Nil => (Nil, clear)
-      case bit :: rest => {  
-        
+     def decode_character1( tree: CodeTree, bits: List[Bit], clear: List[Char]): (List[Bit], List[Char]) = {
+        println("bitct="+bits.length)
+        println("clear="+clear)
+      tree match {
+
+        case Leaf(ch, _) => {
+          println("ch="+ch)
+          (bits, ch :: clear)
+        }
+        case _ => bits match {
+          case Nil => (Nil, clear)
+          case bit :: rest => decode_character1( child(bit, tree), rest, clear)
+        }
       }
-      
+     }
+     
+     def decode_recursive( tree: CodeTree, bits: List[Bit], clear: List[Char]): (List[Bit], List[Char]) = {
+       bits match {
+         case Nil => (bits,clear)
+         case bits => {
+           val (rem,clr) = decode_character1(tree, bits, clear)
+           println("clr="+clr)
+           decode_recursive(tree,rem,clr)          
+         }
+       }
+     }
+    
+
+//     val (rem0,clr0) = decode_character1(tree, bits, Nil)
+//     val (rem1,clr1) = decode_character1(tree, rem0, clr0)
+     val (rem, clr) = decode_recursive(tree, bits, Nil)
+//     println("clr1="+clr1)
+//     println("rem1="+rem1)
+     
+     clr.reverse
+  }
+  
+  
+  
+    def decode_character(tree: CodeTree, bits: List[Bit],  clear: List[Char]): (List[Bit], List[Char]) = {
+      tree match {
+        case Leaf(ch, _) => (bits, ch :: clear)
+        case _ => bits match {
+          case Nil => (Nil, clear)
+          case bit :: rest => decode_character(child(bit, tree), rest, clear)
+        }
+      }
     }
-    
-    
-    
-    (Nil,Nil)
-  }
-    
-    
-    
-    Nil
-  }
-  
-  
+
+
 
   /**
    * A Huffman coding tree for the French language.
