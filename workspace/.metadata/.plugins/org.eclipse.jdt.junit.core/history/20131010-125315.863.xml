@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="HuffmanSuite" project="progfun-patmat" tests="9" started="9" failures="0" errors="1" ignored="0">
+  <testsuite name="patmat.HuffmanSuite" time="0.028">
+    <testcase name="weight of a larger tree" classname="patmat.HuffmanSuite" time="0.008"/>
+    <testcase name="chars of a larger tree" classname="patmat.HuffmanSuite" time="0.001"/>
+    <testcase name="string2chars" classname="&quot;hello, world&quot;" time="0.003"/>
+    <testcase name="makeOrderedLeafList for some frequency table" classname="patmat.HuffmanSuite" time="0.001"/>
+    <testcase name="combine of some leaf list" classname="patmat.HuffmanSuite" time="0.001"/>
+    <testcase name="combine of some leaf list using until" classname="patmat.HuffmanSuite" time="0.001"/>
+    <testcase name="times test" classname="patmat.HuffmanSuite" time="0.001"/>
+    <testcase name="code buildup" classname="patmat.HuffmanSuite" time="0.004"/>
+    <testcase name="decode and encode a very short text should be identity" classname="patmat.HuffmanSuite" time="0.007">
+      <error>scala.NotImplementedError: an implementation is missing
+	at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
+	at patmat.Huffman$.encode(Huffman.scala:289)
+	at patmat.HuffmanSuite$$anonfun$9$$anon$5.&lt;init&gt;(HuffmanSuite.scala:93)
+	at patmat.HuffmanSuite$$anonfun$9.apply$mcV$sp(HuffmanSuite.scala:92)
+	at patmat.HuffmanSuite$$anonfun$9.apply(HuffmanSuite.scala:92)
+	at patmat.HuffmanSuite$$anonfun$9.apply(HuffmanSuite.scala:92)
+	at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+	at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+	at patmat.HuffmanSuite.withFixture(HuffmanSuite.scala:11)
+	at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+	at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+	at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:198)
+	at org.scalatest.FunSuite$class.runTest(FunSuite.scala:1271)
+	at patmat.HuffmanSuite.runTest(HuffmanSuite.scala:11)
+	at org.scalatest.FunSuite$$anonfun$runTests$1.apply(FunSuite.scala:1304)
+	at org.scalatest.FunSuite$$anonfun$runTests$1.apply(FunSuite.scala:1304)
+	at org.scalatest.SuperEngine$$anonfun$org$scalatest$SuperEngine$$runTestsInBranch$1.apply(Engine.scala:260)
+	at org.scalatest.SuperEngine$$anonfun$org$scalatest$SuperEngine$$runTestsInBranch$1.apply(Engine.scala:249)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:249)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:326)
+	at org.scalatest.FunSuite$class.runTests(FunSuite.scala:1304)
+	at patmat.HuffmanSuite.runTests(HuffmanSuite.scala:11)
+	at org.scalatest.Suite$class.run(Suite.scala:2303)
+	at patmat.HuffmanSuite.org$scalatest$FunSuite$$super$run(HuffmanSuite.scala:11)
+	at org.scalatest.FunSuite$$anonfun$run$1.apply(FunSuite.scala:1310)
+	at org.scalatest.FunSuite$$anonfun$run$1.apply(FunSuite.scala:1310)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:362)
+	at org.scalatest.FunSuite$class.run(FunSuite.scala:1310)
+	at patmat.HuffmanSuite.run(HuffmanSuite.scala:11)
+	at org.scalatest.junit.JUnitRunner.run(JUnitRunner.scala:94)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

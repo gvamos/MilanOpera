@@ -1,0 +1,47 @@
+package patmat
+import common._
+import patmat._
+import patmat.Huffman._
+
+
+
+object Huff {
+  println("Welcome to the Scala worksheet")
+  
+  
+  implicit def double2int(d:Double): Int = d.toInt
+  
+  val i: Int = 2.2
+  
+  
+//  abstract class CodeTree
+//  case class Fork(left: CodeTree, right: CodeTree, chars: List[Char], weight: Int) extends CodeTree
+//  case class Leaf(char: Char, weight: Int) extends CodeTree
+//  implicit def pairToLeaf(char: Char, weight: Int): Leaf = new Leaf('a',3)
+
+  val t0 = ('a',2)
+  
+  implicit def tupleToLeaf(t: (Char, Int)): Leaf = t match { case (c,n) => Leaf(c,n) }
+  implicit def leafToTuple(l: Leaf): Leaf = l match { case Leaf(c,n) => (c,n) }
+  
+  val l0 = Leaf('a',2)
+  val l1: Leaf = t0
+  
+  val data = string2Chars("abbccc")
+  val acc = List()
+
+  
+  val tbl3 = Huffman.times(data)
+  
+  val leaflist = List(Leaf('e', 1), Leaf('t', 2), Leaf('x', 4))
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+}

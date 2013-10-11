@@ -1,0 +1,23 @@
+INDEX VERSION 1.126+/home/gvamos/study/MilanOpera/workspace/.metadata/.plugins/org.eclipse.jdt.core
+1230503809.index
+3244882516.index
+1579585280.index
+3378868991.index
+417373247.index
+3721354332.index
+3937884183.index
+1159935248.index
+3422508414.index
+2683054613.index
+2898480234.index
+1825514421.index
+890912659.index
+1698757907.index
+1607916863.index
+2371259756.index
+614570097.index
+2977559878.index
+262802227.index
+2456322530.index
+746434222.index
+3150365460.index

@@ -1,0 +1,13 @@
+package patmat
+
+object Huff {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  
+  
+  implicit def double2int(d:Double): Int = d.toInt
+  
+  val i: Int = 2.2
+  
+  
+  
+}

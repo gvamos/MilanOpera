@@ -1,0 +1,5 @@
+<scalastyle-workspace-configuration>
+ <configurations>
+  <configuration file="/progfun-patmat/project/scalastyle_config.xml"></configuration>
+ </configurations>
+</scalastyle-workspace-configuration>
