@@ -81,8 +81,8 @@ class HuffmanSuite extends FunSuite {
       val message = string2Chars("aabbbbccccccccc")
       val target = Fork(Fork(Leaf('a', 2), Leaf('b', 4), List('a', 'b'), 6), Leaf('c', 9), List('a', 'b', 'c'), 15)
       val ct = createCodeTree(message)
-      println(target)
-      println(ct)
+      //println(target)
+      //println(ct)
       assert(ct === target)
     }
   }
@@ -91,7 +91,7 @@ class HuffmanSuite extends FunSuite {
     new TestTrees {
       val bits: List[Bit] = List(0, 0, 0)
       val (remainder, cleartext) = decode_character(frenchCode, bits, Nil)
-      println("cleartext=" + cleartext)
+      //println("cleartext=" + cleartext)
       assert(remainder.length === 0)
       assert('s' === cleartext(0))
     }
@@ -101,7 +101,7 @@ class HuffmanSuite extends FunSuite {
     new TestTrees {
       val bits: List[Bit] = List(0, 0, 0, 0)
       val (remainder, cleartext) = decode_character(frenchCode, bits, Nil)
-      println("cleartext=" + cleartext)
+      //println("cleartext=" + cleartext)
       assert('s' === cleartext(0))
       assert(remainder.length === 1) // Make sure a bit is left
     }
@@ -110,10 +110,8 @@ class HuffmanSuite extends FunSuite {
 
   test("Full French clear text message") {
     new TestTrees {
-      println("**Full French Text Decode**")
       val bits: List[Bit] = secret
       val result = decodedSecret
-      println(result)
     }
   }
   
@@ -121,9 +119,7 @@ class HuffmanSuite extends FunSuite {
 
   test("Encode french text") {
     new TestTrees {
-      println("**Full French Text encode**")
       val cleartext = string2Chars("huffmanestcool")
-      //val bits: List[Bit] = secret
       val result = encode(frenchCode)(cleartext)
       assert(result === secret)
     }
@@ -136,17 +132,40 @@ class HuffmanSuite extends FunSuite {
     }
   }
   
-    test("decode and quick encode a very short text should be identity") {
+  test("decode and quick encode a very short text should be identity") {
     new TestTrees {
       assert(decode(t1, quickEncode(t1)("ab".toList)) === "ab".toList)
+    }
+  }
+    
+ test("decode2 and encode a very short text should be identity") {
+    new TestTrees {
+      assert(decode(t2, encode(t2)("abd".toList)) === "abd".toList)
+    }
+  }
+ 
+  test("compare encodes of a very short text should match") {
+    new TestTrees {
+      assert(decode(t2, encode(t2)("abd".toList)) === "abd".toList)
+    }
+  }
+  
+    test("decode2 and quick encode a very short text should be identity") {
+    new TestTrees {
+      val msg = "abd".toList
+      val first = encode(t2)(msg)
+      val second = quickEncode(t2)(msg)
+      println(first)
+      println(second)
+      assert(first === second)
     }
   }
   
   test("spike") {
     new TestTrees {
-      println("**Spike**")
+      //println("**Spike**")
       val pair = charcode( frenchCode, 'h', Nil)
-      println(pair)
+      //println(pair)
     }
   }
 }

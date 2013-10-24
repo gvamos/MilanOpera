@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="26" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="1086" width="1748" x="65" y="24">
+<window height="1103" width="1452" x="328" y="71">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -19,13 +19,14 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="scala.tools.eclipse.ScalaClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.scalaide.worksheet.editors.ScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="scala.tools.eclipse.ScalaSourceFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1381247787548" focus="true" label="Workspace - Debug">
+<page aggregateWorkingSetId="Aggregate for window 1381247787548" focus="true" label="Workspace - Scala">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -38,17 +39,17 @@
 </folder>
 </info>
 </editorArea>
-<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Huffman.scala" partName="Huffman.scala" path="/home/gvamos/study/MilanOpera/patmat/src/main/scala/patmat/Huffman.scala" title="Huffman.scala" tooltip="progfun-patmat/src/main/scala/patmat/Huffman.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-patmat/src/main/scala/patmat/Huffman.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9434" selectionTopPixel="4669"/>
+<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="Lab.sc" partName="Lab.sc" path="/home/gvamos/study/MilanOpera/forcomp/src/main/scala/forcomp/Lab.sc" title="Lab.sc" tooltip="progfun-forcomp/src/main/scala/forcomp/Lab.sc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-forcomp/src/main/scala/forcomp/Lab.sc"/>
+<editorState selectionHorizontalPixel="0" selectionLength="45" selectionOffset="3355" selectionTopPixel="937"/>
 </editor>
-<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="Huff.sc" partName="Huff.sc" path="/home/gvamos/study/MilanOpera/patmat/src/main/scala/patmat/Huff.sc" title="Huff.sc" tooltip="progfun-patmat/src/main/scala/patmat/Huff.sc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-patmat/src/main/scala/patmat/Huff.sc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="147" selectionOffset="3245" selectionTopPixel="697"/>
+<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" partName="Anagrams.scala" path="/home/gvamos/study/MilanOpera/forcomp/src/main/scala/forcomp/Anagrams.scala" title="Anagrams.scala" tooltip="progfun-forcomp/src/main/scala/forcomp/Anagrams.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2723" selectionTopPixel="1356"/>
 </editor>
-<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="HuffmanSuite.scala" partName="HuffmanSuite.scala" path="/home/gvamos/study/MilanOpera/patmat/src/test/scala/patmat/HuffmanSuite.scala" title="HuffmanSuite.scala" tooltip="progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4493" selectionTopPixel="2125"/>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="AnagramsSuite.scala" partName="AnagramsSuite.scala" path="/home/gvamos/study/MilanOpera/forcomp/src/test/scala/forcomp/AnagramsSuite.scala" title="AnagramsSuite.scala" tooltip="progfun-forcomp/src/test/scala/forcomp/AnagramsSuite.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="805" selectionTopPixel="434"/>
 </editor>
 </editors>
 <views>
@@ -64,9 +65,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Errors (1 item)"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="359" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="277"/>
+<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="436" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="277"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -126,14 +127,11 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.help.ui.HelpView" partName="Help">
-<viewState activeSet="Default" expression="preferences" pageId="fsearch-page"/>
-</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="scala.tools.eclipse.ScalaSourceFileEditor" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="scala.tools.eclipse.ScalaSourceFileEditor" activePerspective="org.scala-ide.sdt.core.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="scala.tools.eclipse.PerspectiveFactory" id="org.scala-ide.sdt.core.perspective" label="Scala"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -168,48 +166,39 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.jdt.junit.ResultView"/>
-<view id="org.eclipse.help.ui.HelpView"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="16384" id="explorer" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="0">
-<fastViews>
-<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.2997918"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="explorer">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
-</folder>
-</info>
-<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="explorer">
-<folder activePageID="org.eclipse.help.ui.HelpView" appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="Help"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
-<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 </presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="explorer">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="explorer"/>
 <info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@431d738f" ratio="0.5546448" ratioLeft="609" ratioRight="489" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@431d738f" ratio="0.62148595" ratioLeft="619" ratioRight="377" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -263,50 +252,35 @@
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.help.ui.HelpView"/>
 <view id="org.eclipse.jdt.junit.ResultView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="Type Hierarchy"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@32dc859a" ratio="0.74949086" ratioLeft="736" ratioRight="246" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@32dc859a" ratio="0.74949086" ratioLeft="736" ratioRight="246" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@23f77bc5" ratio="0.74947953" ratioLeft="1080" ratioRight="361" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="Help"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@23f77bc5" ratio="0.74947953" ratioLeft="1080" ratioRight="361" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74949086" ratioLeft="736" ratioRight="246" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74949086" ratioLeft="736" ratioRight="246" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
@@ -314,23 +288,17 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44972825" ratioLeft="331" ratioRight="405" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74947953" ratioLeft="1080" ratioRight="361" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74947953" ratioLeft="1080" ratioRight="361" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.499653" ratioLeft="720" ratioRight="721" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.499653" ratioLeft="720" ratioRight="721" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -342,158 +310,163 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-patmat/src/main/scala/patmat/Huffman.scala"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun-forcomp/src/main/scala/forcomp/Lab.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="scala.tools.eclipse.ScalaClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=progfun-forcomp/\/opt\/eclipse\/configuration\/org.eclipse.osgi\/bundles\/260\/1\/.cp\/lib\/scala-library.jar&lt;scala(package$.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="scala.tools.eclipse.ScalaClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=progfun-forcomp/\/opt\/eclipse\/configuration\/org.eclipse.osgi\/bundles\/260\/1\/.cp\/lib\/scala-library.jar&lt;scala.collection.immutable(List.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
 </editors>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8634" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="2">
+<position info="not_deleted" x="255" y="23"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8665" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="1965" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8700" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="2">
+<position info="not_deleted" x="255" y="23"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="2">
+<position info="not_deleted" x="255" y="23"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8634" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="1553" y="103"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8665" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="1384" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8700" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="2">
+<position info="not_deleted" x="680" y="119"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="2239" y="68"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8634" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="2239" y="68"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8665" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="2">
+<position info="not_deleted" x="680" y="119"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8700" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="1616" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="2">
+<position info="not_deleted" x="698" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8566" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="1616" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8594" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="2230" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="1114" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8634" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="721" y="17"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8665" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8700" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="721" y="17"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="1132" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="721" y="17"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8634" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="1178" y="17"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8665" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="2307" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8700" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="3671" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="722" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="package$.class" index="3">
+<position info="not_deleted" x="2767" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8634" y="0"/>
+<item historyLabel="List.class" index="4">
+<position info="not_deleted" x="3832" y="4"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8665" y="0"/>
+<item historyLabel="package$.class" index="3">
+<position info="not_deleted" x="2767" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8700" y="0"/>
+<item historyLabel="Anagrams.scala" index="0">
+<position info="not_deleted" x="307" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="Anagrams.scala" index="5">
+<position info="not_deleted" x="2248" y="6"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8634" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="3568" y="46"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8665" y="0"/>
+<item historyLabel="Anagrams.scala" index="5">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8700" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="3378" y="22"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Anagrams.scala" index="5">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="Lab.sc" index="1">
+<position info="not_deleted" x="3355" y="45"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8566" y="0"/>
+<item historyLabel="Anagrams.scala" index="5">
+<position/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8594" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="6">
+<position info="not_deleted" x="138" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8536" y="0"/>
+<item historyLabel="Anagrams.scala" index="5">
+<position info="not_deleted" x="2573" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="Anagrams.scala" index="5">
+<position info="not_deleted" x="2786" y="0"/>
 </item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="4210" y="0"/>
+<item historyLabel="Anagrams.scala" index="5">
+<position info="not_deleted" x="2785" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="8516" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="6">
+<position info="not_deleted" x="805" y="0"/>
 </item>
-<item historyLabel="Huffman.scala" index="0">
-<position info="not_deleted" x="9434" y="0"/>
+<item historyLabel="Anagrams.scala" index="5">
+<position info="not_deleted" x="2723" y="0"/>
 </item>
-<item historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="4210" y="0"/>
+<item historyLabel="AnagramsSuite.scala" index="6">
+<position info="not_deleted" x="805" y="0"/>
 </item>
-<item active="true" historyLabel="HuffmanSuite.scala" index="1">
-<position info="not_deleted" x="4493" y="0"/>
+<item active="true" historyLabel="Anagrams.scala" index="5">
+<position info="not_deleted" x="2723" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -501,15 +474,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="explorer"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ToolsFolderView"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@23f77bc5"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -517,11 +481,37 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="scala.tools.eclipse.ScalaClassFileEditor" name="List.class" tooltip="scala.collection.immutable.List">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=progfun-forcomp/\/opt\/eclipse\/configuration\/org.eclipse.osgi\/bundles\/260\/1\/.cp\/lib\/scala-library.jar&lt;scala.collection.immutable(List.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="scala.tools.eclipse.ScalaClassFileEditor" name="package$.class" tooltip="scala.package$">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=progfun-forcomp/\/opt\/eclipse\/configuration\/org.eclipse.osgi\/bundles\/260\/1\/.cp\/lib\/scala-library.jar&lt;scala(package$.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="AnagramsSuite.scala" tooltip="progfun-forcomp/src/test/scala/forcomp/AnagramsSuite.scala">
+<persistable path="/progfun-forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" tooltip="progfun-forcomp/src/main/scala/forcomp/Anagrams.scala">
+<persistable path="/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="Lab.sc" tooltip="progfun-forcomp/src/main/scala/forcomp/Lab.sc">
+<persistable path="/progfun-forcomp/src/main/scala/forcomp/Lab.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="Zorg.sc" tooltip="progfun-forcomp/src/main/scala/forcomp/Zorg.sc">
+<persistable path="/progfun-forcomp/src/main/scala/forcomp/Zorg.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="lab2.sc" tooltip="progfun-forcomp/src/test/lab2.sc">
+<persistable path="/progfun-forcomp/src/test/lab2.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="lab.sc" tooltip="progfun-forcomp/src/main/scala/forcomp/lab.sc">
+<persistable path="/progfun-forcomp/src/main/scala/forcomp/lab.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="package.scala" tooltip="progfun-forcomp/src/main/scala/forcomp/package.scala">
+<persistable path="/progfun-forcomp/src/main/scala/forcomp/package.scala"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="HuffmanSuite.scala" tooltip="progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala">
 <persistable path="/progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala"/>
 </file>

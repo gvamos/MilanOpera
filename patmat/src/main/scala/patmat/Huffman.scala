@@ -380,7 +380,7 @@ object Huffman {
   def convert(tree: CodeTree): CodeTable = {
     def conv(tree: CodeTree, path: List[Bit]): CodeTable = {
       tree match {
-        case Leaf(char, _) => List((char, path))
+        case Leaf(char, _) => List((char, path.reverse))
         case Fork(left, right, _, _) =>
           mergeCodeTables(
             conv(left, 0 :: path),
@@ -418,14 +418,13 @@ object Huffman {
    * and then uses it to perform the actual encoding.
    */
   def quickEncode(tree: CodeTree)(text: List[Char]): List[Bit] = {
-    val codeTable = convert(tree)
-    def bitCecoder(char: Char) = codeBits(codeTable)(char)
-    def foo(text: List[Char]): List[Bit] = {
+    def bitCoder(char: Char) = codeBits(convert(tree))(char)
+    def translate(text: List[Char]): List[Bit] = {
       text match {
         case Nil => Nil
-        case char :: tail => bitCecoder(char) ::: foo(tail)
+        case char :: tail => bitCoder(char) ::: translate(tail)
       }
     }
-    foo(text)
+    translate(text)
   }
 }

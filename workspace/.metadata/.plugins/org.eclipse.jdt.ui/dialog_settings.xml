@@ -25,4 +25,7 @@
 		<item value="true" key="expanded1"/>
 		<item value="true" key="expanded0"/>
 	</section>
+	<section name="WorkingSetModelAwareSelectionDialog">
+		<item value="true" key="ShowVisibleOnly"/>
+	</section>
 </section>
