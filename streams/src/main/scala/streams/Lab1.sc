@@ -38,11 +38,11 @@ object Lab2 {
     //}
 	}
 	
+	val dirs = Frame.Move.dirs                //> dirs  : List[Product with Serializable with streams.Lab2.Frame.Move] = List(
+                                                  //| Left, Right, Up, Down)
+	
 	Frame.startPos                            //> res0: streams.Lab2.Frame.Pos = Pos(1,2)
 	
-
-	//Frame.startPos
-	//Frame.foo
 	
   
 }

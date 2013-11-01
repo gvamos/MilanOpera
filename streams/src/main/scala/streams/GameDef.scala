@@ -99,8 +99,6 @@ trait GameDef {
   }
 
 
-
-
   /**
    * This function returns the block at the start position of
    * the game.
@@ -155,17 +153,14 @@ trait GameDef {
     /**
      * Returns the list of blocks that can be obtained by moving
      * the current block, together with the corresponding move.
-     */
-               //for(m: Move <- Move.allMoves){ println(m)}
-    def neighbors: List[(Block, Move)] = ???
-
+     */                             
+    def neighbors: List[(Block, Move)] = for(m  <- Move.dirs) yield (m.go(this), m) 
     
-
     /**
      * Returns the list of positions reachable from the current block
      * which are inside the terrain.
      */
-    def legalNeighbors: List[(Block, Move)] = ???
+    def legalNeighbors: List[(Block, Move)] = neighbors.filter { case(b, m) => b.isLegal }
 
     /**
      * Returns `true` if the block is standing.

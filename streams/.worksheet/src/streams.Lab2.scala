@@ -36,13 +36,12 @@ object Lab2 {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; 
    // def foo() {
     //  for(m: Move <- Move.dirs){ println(m) }
     //}
-	};$skip(601); val res$0 = 
+	};$skip(613); 
+	
+	val dirs = Frame.Move.dirs;System.out.println("""dirs  : List[Product with Serializable with streams.Lab2.Frame.Move] = """ + $show(dirs ));$skip(18); val res$0 = 
 	
 	Frame.startPos;System.out.println("""res0: streams.Lab2.Frame.Pos = """ + $show(res$0))}
 	
-
-	//Frame.startPos
-	//Frame.foo
 	
   
 }
