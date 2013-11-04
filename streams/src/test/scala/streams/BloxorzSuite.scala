@@ -52,6 +52,24 @@ class BloxorzSuite extends FunSuite {
       assert(startPos == Pos(1,1))
     }
   }
+  
+  test("neighbors with history") {
+    val solver = new GameDef with Solver with StringParserTerrain{
+      val level =
+        """ooo-------
+          |oSoooo----
+          |ooooooooo-
+          |-ooooooooo
+          |-----ooToo
+          |------ooo-""".stripMargin
+      val block = Block(Pos(1,1), Pos(1,1))
+      val history = List()
+      val actual = neighborsWithHistory(block, history).toList
+      val expected = List((Block(Pos(1,2),Pos(1,3)),List(Right)), (Block(Pos(2,1),Pos(3,1)),List(Down)))
+      assert(expected === actual)
+    }   
+  }
+
 
   test("optimal solution for level 1") {
     new Level1 {
